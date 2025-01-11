@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html-test</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="main.css">
 
 </head>
 <body>
@@ -14,16 +15,26 @@
         <input type="text" id = "class_count">
         <button onclick = "click_button()">決定</button>
     </p>
-    <p></p>
+    <p id = "error"></p>
     <div id = "make_input"></div>
     <p></p>
-    <p id="heikin"></p>
-    <p>-----------------</p>
-    <p>
-        <label for="get_data">出席番号でdataを確認</label>
-        <input type="text" id = "get_data">
-        <button onclick = "get_data()">決定</button>
-        <p id = "got_data"></p>
-    </p>
+    <div id="div">
+        <p id="heikin"></p>
+        <p>-----------------</p>
+        <p>
+            <button onclick = "set_normal()">ノーマル</button>
+            <button onclick = "set_rank_hight()">高い順</button>
+            <button onclick = "set_rank_low()">低い順</button>
+        </p>
+
+
+        <p>
+            <label for="get_data">出席番号でdataを確認</label>
+            <input type="text" id = "get_data">
+            <button onclick = "get_data()">決定</button>
+            <p id = "got_data"></p>
+            <p></p>
+        </p>
+    </div>
 </body>
 </html>

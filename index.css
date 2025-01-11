@@ -1,0 +1,19 @@
+html, body ,p{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 縦に並べる */
+}
+
+p {
+    margin: 1px 0; /* pタグの余白を調整 */
+}
+
+#div{
+    display: none;
+}
+
+#error{
+    display: block;
+}
